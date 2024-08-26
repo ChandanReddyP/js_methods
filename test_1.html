@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let student={
+        stuId:101,
+        name:"chandan",
+        birthYear:2000,
+        calcAge:function()
+        {
+            let d1=new Date();
+            let currentYear=d1.getfullyear;
+            let age=currentYear-this.birthYear;
+            console.log(age);
+        }
+    };
+    console.log(student);
+    console.log(student.calcAge);
+    student.calcAge(2000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>call method</h1>
+        <h1>call method is used to set this keyword value explicitly by passing owner object as an argument.</h1>
+    </center>
+    <script>
+        let travels_1={id:"OR101",tname:"orange",bookings:[]};
+
+        let travels_2={id:"VR101",tname:"VRL",bookings:[]};
+
+        let travels_3={id:"SR101",tname:"srs",bookings:[]};
+
+        let book=function(pname,seatno)
+            {
+                console.log(`${pname} is book a seat in ${this.tname} travels with seat number ${seatno}`);
+            }
+        book.call(travels_1,"smith",24);
+        book.call(travels_2,"chandan",24);
+        book.call(travels_3,"raman",24);
+    </script>
+</body>
+</html>
